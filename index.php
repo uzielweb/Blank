@@ -4,6 +4,8 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
 $config = JFactory::getConfig();
 $col_side = $this->params->get('col_side');
 $footer_side = $this->params->get('footer_side');
+$logo = $this->params->get('logo');
+$google_site_verification = $this->params->get('google_site_verification');
 $col_middle = '12';
 if (($this->countModules('left')) and ($this->countModules('right')))
 {
@@ -130,16 +132,35 @@ echo '<div class="' . $name . ' ' . '" style="float:left; width:' . $width . '%"
 <head>
   <jdoc:include type="head" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <?php if (!empty($google_site_verification)) { ?> 
+  <meta name="google-site-verification" content="<?php $google_site_verification;?>">
+  <?php } ?> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
   <link rel="apple-touch-icon-precomposed" href="<?php echo $tpath; ?>/images/apple-touch-icon-57x57-precomposed.png">
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo $tpath; ?>/images/apple-touch-icon-72x72-precomposed.png">
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo $tpath; ?>/images/apple-touch-icon-114x114-precomposed.png">
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo $tpath; ?>/images/apple-touch-icon-144x144-precomposed.png">
+ <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]--> 
 </head>
   
 <body class="<?php echo (($menu->getActive() == $menu->getDefault()) ? ('front') : ('site')).' '.$active->alias.' '.$pageclass; ?>">
   
 <header>
+  <div class="container">
+    <?php if (!empty($logo)) { ?>                                                          
+        <div class="logo col-md-2 col-xs-4"> <h1>                                                                                    
+            <a href="<?php echo $this->baseurl; ?>">                                                                                                   
+              <img src="<?php echo $this->params->get('logo'); ?>" alt="                                                                                                   
+              <?php echo $config->get('sitename'); ?>        " /></a></h1>                                                          
+        </div>
+<?php } ?>
+    
+
 <?php if ($this->countModules('menu')): ?>                                                          
         <div class="navigation col-md-10 col-xs-8">                                                                       
           <nav class="navbar navbar-inverse">                                                                                    
@@ -156,12 +177,8 @@ echo '<div class="' . $name . ' ' . '" style="float:left; width:' . $width . '%"
           </nav>                                                          
         </div>  
 <?php endif; ?> 
- <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]--> 
+
+      </div>
 </header>
  <?php if ($this->countModules('slideshow')): ?>                                      
     <section class="slideshow col-md-12">                                             
