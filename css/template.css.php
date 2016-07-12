@@ -50,6 +50,15 @@ require('normalize.css');
 // template css
 require('template.css');
 
+// Bootstrap css
+require('bootstrap.css');
+
+// FontAwesome css
+require('fontawesome.css');
+
+// Custom css
+require('custom.css');
+
 // load system stylesheets for system messages and default buttons
 require('../../../media/system/css/system.css');
 require('../../system/css/system.css');
