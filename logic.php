@@ -15,5 +15,9 @@ $this->setGenerator(null);
 // template js
 $doc->addScript($tpath.'/js/logic.js');
 
+// bootstrap js
+$doc->addScript($tpath.'/js/bootstrap.min.js');
+$doc->addScript('https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js');
+
 // template css
 $doc->addStyleSheet($tpath.'/css/template.css.php');
