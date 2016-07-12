@@ -129,6 +129,7 @@ echo '<div class="' . $name . ' ' . '" style="float:left; width:' . $width . '%"
 
 <head>
   <jdoc:include type="head" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
   <link rel="apple-touch-icon-precomposed" href="<?php echo $tpath; ?>/images/apple-touch-icon-57x57-precomposed.png">
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo $tpath; ?>/images/apple-touch-icon-72x72-precomposed.png">
@@ -155,7 +156,12 @@ echo '<div class="' . $name . ' ' . '" style="float:left; width:' . $width . '%"
           </nav>                                                          
         </div>  
 <?php endif; ?> 
-  
+ <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]--> 
 </header>
  <?php if ($this->countModules('slideshow')): ?>                                      
     <section class="slideshow col-md-12">                                             
