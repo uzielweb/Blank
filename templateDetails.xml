@@ -37,7 +37,7 @@
     <config>
       <fields name="params">
         <fieldset name="advanced">
-        <field name="google-site-verification" type="text" label="TPL_GOOGLE_VERIFICATION_LABEL" default="" description="TPL_GOOGLE_VERIFICATION_DESC" />
+        <field name="google_site_verification" type="text" label="TPL_GOOGLE_VERIFICATION_LABEL" default="" description="TPL_GOOGLE_VERIFICATION_DESC" />
           
           <field name="logo" type="media" label="TPL_LOGO_LABEL" default="images/logo.png" description="TPL_LOGO_DESC" />
           <field name="type_of_layout" type="list" label="TPL_TYPE_OF_LAYOUT_LABEL" default="bootstrap" description="TPL_TYPE_OF_LAYOUT_DESC">
