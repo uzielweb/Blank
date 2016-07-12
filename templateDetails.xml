@@ -2,18 +2,16 @@
 <!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
 
 <extension version="2.5" type="template" client="site" method="upgrade">
-	
-	<name>frontend</name><!-- name the template -->
-	<creationDate>xxxx-xx-xx</creationDate><!-- the date your are beginn to code -->
-	<author>your name</author><!-- your name (oops, I repeat myself) -->
-	<copyright>Copyright © xxxx example.com</copyright><!-- for who you are coding -->
-	<authorEmail>your.name@example.com</authorEmail><!-- your email address -->
-	<authorUrl>http://www.example.com</authorUrl><!-- your url -->
-	<version>1.0.0</version><!-- give your template a number -->
-	<description><![CDATA[ 
-		<h1>frontend</h1>
-		<p>Created by <a href="http://www.example.com" target="_blank">your name | example.com</a>.</p>
-	]]></description><!-- change the description as you like -->
+    <name>Ponto Mega</name>	
+    <creationDate>2016-07-12</creationDate>
+    <author>Ponto Mega</author>
+    <copyright>Copyright © 2016 pontomega.com.br</copyright>
+    <authorEmail>contato@pontomega.com.br</authorEmail>
+    <authorUrl>http://www.pontomega.com.br</authorUrl>
+    <version>1.0.0</version>
+    <description>
+      <![CDATA[ <h1>Gramado Zoo - Tema Oficial</h1> <p>Criado por <a href="http://www.pontomega.com.br" target="_blank">Ponto Mega| pontomega.com.br</a>.</p> ]]>
+    </description>
 	
 	<files><!-- no need to change -->
 		<folder>css</folder>
@@ -30,8 +28,36 @@
 		<filename>templateDetails.xml</filename>
 	</files>
 	
-	<positions><!-- define the positions for modules here -->
-		<position>debug</position>
-	</positions>
+   <languages folder="language">
+      <language tag="en-GB">en-GB/en-GB.tpl_pontomega.ini</language>
+      <language tag="en-GB">en-GB/en-GB.tpl_pontomega.sys.ini</language>
+      <language tag="pt-BR">pt-BR/pt-BR.tpl_pontomega.ini</language>
+      <language tag="pt-BR">pt-BR/pt-BR.tpl_pontomega.sys.ini</language>
+    </languages>
+    <config>
+      <fields name="params">
+        <fieldset name="advanced">
+        <field name="google-site-verification" type="text" label="TPL_GOOGLE_VERIFICATION_LABEL" default="" description="TPL_GOGLE_VERIFICATION_DESC" />
+          
+          <field name="logo" type="media" label="TPL_LOGO_LABEL" default="images/logo.png" description="TPL_LOGO_DESC" />
+          <field name="type_of_layout" type="list" label="TPL_TYPE_OF_LAYOUT_LABEL" default="bootstrap" description="TPL_TYPE_OF_LAYOUT_DESC">
+            <option value="bootstrap">TPL_BOOTSTRAP</option>
+            <option value="custom">TPL_CUSTOM</option>
+          </field>
+          <field name="proportional_equal" type="list" label="TPL_PROPORTIONAL_LABEL" default="proportional" description="TPL_PROPORTIONAL_DESC">
+            <option value="proportional">TPL_PROPORTIONAL</option>
+            <option value="equal">TPL_EQUAL</option>
+          </field>
+          <field name="col_side" type="list" label="TPL_SIDEBARS_LABEL" default="3" description="TPL_SIDEBARS_DESC">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </field>
+        </fieldset>
+      </fields>
+    </config>
 	
 </extension>
