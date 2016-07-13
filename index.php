@@ -356,15 +356,9 @@ echo '<div class="' . $name . ' ' . '" style="float:left; width:' . $width . '%"
 
 <?php endif; ?> 
 
-	    <?php if ($this->countModules('login') or $this->countModules('cart')) : ?>                                       
-
-    <div class="subtop col-md-10 col-xs-12">                                                              
-
-      <?php echo positions(array('login' => 8,'cart' => 4 ) , 'xhtml'); ?>                                                            
-
-    </div>                                           
-
-    <?php endif; ?>
+	<?php if ($this->countModules('login') or $this->countModules('search') or $this->countModules('cart')) : ?>                                       
+		<?php echo positions(array('login' => 6,'search' => 3,'cart' => 3 ) , 'xhtml'); ?>                                                            
+        <?php endif; ?>
 
         </div>  
 
