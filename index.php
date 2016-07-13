@@ -326,10 +326,10 @@ echo '<div class="' . $name . ' ' . '" style="float:left; width:' . $width . '%"
 
 
 
-<?php if ($this->countModules('menu')): ?>                                                          
+                                                       
 
-        <div class="navigation col-md-10 col-xs-8">                                                                       
-
+<div class="navigation col-md-10 col-xs-8">                                                                       
+<?php if ($this->countModules('menu')): ?>   
           <nav class="navbar navbar-inverse">                                                                                    
 
             <div class="navbar-header">                                                                                                 
@@ -354,9 +354,20 @@ echo '<div class="' . $name . ' ' . '" style="float:left; width:' . $width . '%"
 
           </nav>                                                          
 
+<?php endif; ?> 
+
+	    <?php if ($this->countModules('login') or $this->countModules('cart')) : ?>                                       
+
+    <div class="subtop col-md-10 col-xs-12">                                                              
+
+      <?php echo positions(array('login' => 8,'cart' => 4 ) , 'xhtml'); ?>                                                            
+
+    </div>                                           
+
+    <?php endif; ?>
+
         </div>  
 
-<?php endif; ?> 
 
 
 
@@ -378,21 +389,21 @@ echo '<div class="' . $name . ' ' . '" style="float:left; width:' . $width . '%"
 
     <?php if ($this->countModules('top1') or $this->countModules('top2') or $this->countModules('top3')): ?>                                       
 
-    <div class="top-a col-md-12">                                                                   
+    <section class="top-a col-md-12">                                                                   
 
       <?php echo positions(array('top1' => 4,'top2' => 4,'top3' => 4 ) , 'block'); ?>                                                            
 
-    </div>                                           
+    </section>                                           
 
     <?php endif; ?>                               
 
     <?php if ($this->countModules('top4') or $this->countModules('top5') or $this->countModules('top6')): ?>                                         
 
-    <div class="top-b col-md-12">                                                                   
+    <section class="top-b col-md-12">                                                                   
 
       <?php echo positions(array('top4' => 4,'top5' => 4,'top6' => 4 ) , 'block'); ?>                                                            
 
-    </div>                                           
+    </section>                                           
 
     <?php endif; ?>  
 
@@ -442,11 +453,11 @@ echo '<div class="' . $name . ' ' . '" style="float:left; width:' . $width . '%"
 
           <?php endif; ?>                                                                                                                  
 
-          <?php if ($this->countModules('breadcrumb')): ?>                                                                             
+          <?php if ($this->countModules('breadcrumbs')): ?>                                                                             
 
-          <div class="breadcrumb col-md-12">                                                                                    
+          <div class="breadcrumbs col-md-12">                                                                                    
 
-            <jdoc:include type="modules" name="breadcrumb" style="none" />                                                                       
+            <jdoc:include type="modules" name="breadcrumbs" style="none" />                                                                       
 
           </div>                                                                       
 
@@ -479,7 +490,25 @@ echo '<div class="' . $name . ' ' . '" style="float:left; width:' . $width . '%"
       </div>                                
 
     </section>                                
+    <?php if ($this->countModules('bottom1') or $this->countModules('bottom2') or $this->countModules('bottom3')): ?>                                       
 
+    <section class="bottom-a col-md-12">                                                                   
+
+      <?php echo positions(array('bottom1' => 4,'bottom2' => 4,'bottom3' => 4 ) , 'block'); ?>                                                            
+
+    </section>                                           
+
+    <?php endif; ?>                               
+
+    <?php if ($this->countModules('bottom4') or $this->countModules('bottom5') or $this->countModules('bottom6')): ?>                                         
+
+    <section class="bottom-b col-md-12">                                                                   
+
+      <?php echo positions(array('bottom4' => 4,'bottom5' => 4,'bottom6' => 4 ) , 'block'); ?>                                                            
+
+    </section>                                           
+
+    <?php endif; ?>  
             
 
     <footer class="footer">
