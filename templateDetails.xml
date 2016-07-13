@@ -29,6 +29,42 @@
 		<filename>templateDetails.xml</filename>
 	</files>
 	
+	<positions><!-- define the positions for modules here -->
+	<position>debug</position>
+        <position>slideshow</position>
+        <position>logo</position>
+        <position>menu</position>
+        <position>left</position>
+        <position>right</position>
+        <position>footer</position>
+        <position>breadcrumbs</position>  
+        <position>icons</position>  
+        <position>inner-footer1</position>  
+        <position>inner-footer2</position>  
+        <position>inner-footer3</position>
+        <position>inner-top1</position>  
+        <position>inner-top2</position>  
+        <position>inner-top3</position>
+        <position>inner-bottom1</position>  
+        <position>inner-bottom2</position>  
+        <position>inner-bottom3</position>
+        <position>top1</position>  
+        <position>top2</position>  
+        <position>top3</position>
+        <position>top4</position>  
+        <position>top5</position>  
+        <position>top6</position>
+        <position>bottom1</position>  
+        <position>bottom2</position>  
+        <position>bottom3</position>
+        <position>bottom4</position>  
+        <position>bottom5</position>  
+        <position>bottom6</position>
+        <position>cart</position>
+        <position>login</position>
+        
+
+	</positions>
    <languages folder="language">
       <language tag="en-GB">en-GB.tpl_pontomega.ini</language>
       <language tag="en-GB">en-GB.tpl_pontomega.sys.ini</language>
