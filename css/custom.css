@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+.navigation,.navigation .nav > div {
+  padding: 0;
+}
 #member-registration .btl-input, #member-profile .btl-input {
   line-height: 33px;
   margin-left: 0;
