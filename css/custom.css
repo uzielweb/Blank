@@ -1,1 +1,141 @@
+.logo h1 {
+    margin: 0;
+    padding: 0;
+}
+img {
+	max-width: 100%;
+}
+.navbar.navbar-inverse {
+  background: #0e6d3e none repeat scroll 0 0;
+  border: 0 none;
+  border-radius: 5px;
+}
+.navbar-inverse .navbar-nav > li > a ,.navbar-inverse .navbar-nav > li > span{
+	color: #93C672;
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+  	background: #93C672;
+  color: #fff;
 
+
+}
+header .container {
+  padding: 10px 0;
+}
+
+.pagination ul {
+  display: inline-block;
+  padding-left: 0;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+.pagination ul > li {
+  display: inline;
+}
+.pagination ul > li > a,
+.pagination ul > li > span {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857143;
+  color: #0E6D3E;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.pagination ul > li:first-child > a,
+.pagination ul > li:first-child > span {
+  margin-left: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.pagination ul > li:last-child > a,
+.pagination ul > li:last-child > span {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.pagination ul > li > a:hover,
+.pagination ul > li > span:hover,
+.pagination ul > li > a:focus,
+.pagination ul > li > span:focus {
+  z-index: 2;
+  color: #23527c;
+  background-color: #eee;
+  border-color: #ddd;
+}
+.pagination ul > .active > a,
+.pagination ul > .active > span,
+.pagination ul > .active > a:hover,
+.pagination ul > .active > span:hover,
+.pagination ul > .active > a:focus,
+.pagination ul > .active > span:focus {
+  z-index: 3;
+  color: #fff;
+  cursor: default;
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+.pagination ul > .disabled > span,
+.pagination ul > .disabled > span:hover,
+.pagination ul > .disabled > span:focus,
+.pagination ul > .disabled > a,
+.pagination ul > .disabled > a:hover,
+.pagination ul > .disabled > a:focus {
+  color: #777;
+  cursor: not-allowed;
+  background-color: #fff;
+  border-color: #ddd;
+}
+.pagination ul-lg > li > a,
+.pagination ul-lg > li > span {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+}
+.pagination ul-lg > li:first-child > a,
+.pagination ul-lg > li:first-child > span {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.pagination ul-lg > li:last-child > a,
+.pagination ul-lg > li:last-child > span {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.pagination ul-sm > li > a,
+.pagination ul-sm > li > span {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.pagination ul-sm > li:first-child > a,
+.pagination ul-sm > li:first-child > span {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.pagination ul-sm > li:last-child > a,
+.pagination ul-sm > li:last-child > span {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+a{
+	color:#0E6D3E;
+}
+a:hover{
+	color: #93C672;
+}
+.article-info {
+    padding: 10px 0;
+}
+.article-info dd{
+    margin-right: 10px;
+    float: left; 
+}
+.footer {
+  background: #0e6d3e none repeat scroll 0 0;
+  color: #fff;
+  display: inline-block;
+  padding: 10px;
+  width: 100%;
+}
