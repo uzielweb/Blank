@@ -2,6 +2,18 @@
     margin: 0;
     padding: 0;
 }
+.tags.inline {
+  display: inline-block;
+  padding: 0;
+}
+.tags li {
+  float: left;
+  list-style: outside none none;
+  margin-right: 10px;
+}
+.tags li a.label {
+  background: #93c672 none repeat scroll 0 0;
+}
 .navigation,.navigation .nav > div {
   padding: 0;
 }
