@@ -84,7 +84,7 @@ if ((JFactory::getDocument()->params->get('type_of_layout') == "custom") and (JF
 {
 // For Bootstrap with proportional widths remove/comment the IF bellow
 // For Custom with with more then 1 position add/uncomment the IF bellow
-if (($value > 0) and ($countOfActivaPositions == 2) and (count($position) > 2))
+if (($value > 0) and ($countOfActivePositions == 2) and (count($position) > 2))
 {
 $width = 100 / 2;
 }
