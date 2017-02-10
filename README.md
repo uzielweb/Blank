@@ -1,3 +1,15 @@
+#FORKED BY UZIEL VIA PONTOMEGA
+
+
+Blank is a light, powerfull and free template for Joomla! for faster and easier web development.
+
+* This is a FORK with custom dynamic positions bootstrapped and no bootstrapped (like Artisteer way for build module positions).
+* This is a Fork With FontAwesome, Bootstrap, Custom Logo, Custom Dynamic Width for custom positions and Custom CSS. Icon Moon pre-loaded and many others improvements.
+
+Please, Collaborate with your suggestion contato@pontomega.com.br
+
+
+
 # [Blank 3.3.0](http://blank.vc)
 
 Light, powerful and free template for Joomla!
