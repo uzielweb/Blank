@@ -181,6 +181,7 @@ echo '<div class="' . $name . ' ' . '" style="float:left; width:' . $width . '%"
           </nav>                                                           
           <?php endif; ?>   	       
         </div>
+         </div>
     </header> 
     <?php if ($this->countModules('slideshow')): ?>                                           
     <section class="slideshow col-md-12">                                                    
