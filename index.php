@@ -11,7 +11,7 @@ if (($this->countModules('left')) and ($this->countModules('right')))
 {
 $col_middle = (12 - (2 * $col_side));
 }
-if (($this->countModules('left')) or ($this->countModules('right')))
+if ((($this->countModules('left')) and !($this->countModules('right')))   or (!($this->countModules('left')) and ($this->countModules('right')))   )  
 {
 $col_middle = (12 - $col_side);
 }
