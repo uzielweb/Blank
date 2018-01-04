@@ -8,6 +8,8 @@ $active = $app->getMenu()->getActive();
 $params = $app->getParams();
 $pageclass = $params->get('pageclass_sfx');
 $tpath = $this->baseurl.'/templates/'.$this->template;
+$logo = $this->params->get('logo');
+$google_site_verification = $this->params->get('google_site_verification');
 
 // generator tag
 $this->setGenerator(null);
@@ -27,8 +29,7 @@ $config = JFactory::getConfig();
 $col_side = $this->params->get('col_side');
 $footer_side = $this->params->get('footer_side');
 $full_height_class = $this->params->get('full_height_class');
-$logo = $this->params->get('logo');
-$google_site_verification = $this->params->get('google_site_verification');
+
 $col_middle = '12';
 if (($this->countModules('left')) and ($this->countModules('right')))
 {
